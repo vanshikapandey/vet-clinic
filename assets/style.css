@@ -7,26 +7,11 @@
   font-family: 'Lato', sans-serif;
   
 }
-a{
-  text-decoration: none;
-}
-p{
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Nunito', sans-serif;
-}
-h1,h2,h3,h4,h5{
-  font-weight: 800;
-  font-family: 'Fredoka', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Ubuntu', sans-serif; 
-}
 i{
   padding:0 2vh ;
   color: #101c81;
 }
 .top {
-  /* margin-top: -1vh; */
   margin-bottom: 0vh;
   background-color: #000000;
   line-height: 7vh;
@@ -38,26 +23,6 @@ i{
   padding-left: 2vh;
 }
 
-
-.timings{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.timings div{
-  padding: 2vh;
-}
-
-.timings i{
-  font-size: 34px; 
-  background-color: rgba(128, 128, 128, 0.389);
-  padding: 5px;
-  border-radius: 5px;
-  margin-right: 2vh;
-}
-
-
 .clinic-name{
   display: flex;
   margin: auto;
@@ -67,9 +32,7 @@ i{
   font-weight: 700;
   justify-content: center;
 
-
 }
-
 .btns{
 
   padding:20px;
@@ -101,7 +64,6 @@ i{
 
 .about-page img{
   border-radius: 20px;
-  /* width: 600px; */
 }
 
 .r {
@@ -149,7 +111,6 @@ i{
   to { transform: rotate(359deg); }
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .c {
     -ms-flex: 50%;
@@ -158,13 +119,92 @@ i{
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .c {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
+  *{
+    text-align: center;
+  }
+  
+  .heading{
+    font-size: 28px;
+    text-align: center;
+  }
+  .banner{
+    margin-bottom: -50vh;
+  }
+  .about .curve-img{
+    width: 100;
+    height: 100;
+    display: none;
+  }
+  .info{
+    margin-top: 2vh;
+  }
+  .info-card , .about ,.services-card , .service-header, .choice, .offer,  .faq-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+  }
+ 
+ 
+  #counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  #counter .c{
+    padding-bottom: 2vh;
+  }
+  .centered{
+    margin-top: 5vh;
+    font-size: 25px;
+  }
+  .contact .card{
+    margin:2vh;
+  }
+ .services{
+   margin-top: -20vh;
+ }
+  .services-card div{
+    width: 100%;
+  }
+  .second-grp{
+    display: none;
+  }
+  .choice img{
+    width: 300px;
+    height: 300px;
+  }
+  .offer img{
+    height: 300px;
+    width: 100%;
+  }
+  .offer .offer-text h1{
+    font-size: 28px;
+  }
+  .offer .offer-text{
+    font-size: 20px;
+    padding: 5vh;
+  }
+ .faq img{
+  display: none;
+ }
+  .top{
+    display: none;
+  }
+  .info .info-card .card-body{
+    margin-bottom: 5vh;
+  }
+
 }
 .tick{
   color: white;
@@ -200,9 +240,6 @@ i{
   font-size: 160px;
   font-weight: bolder;
   white-space: nowrap;
-  /* font-family: 'Fredoka', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Ubuntu', sans-serif;  */
 }
 .centered div{
   position: absolute;
@@ -810,8 +847,6 @@ i{
     height: 500px;
     width: 52%;
 }
-.pushed-header {
-}	
 .pushed-content {
   border-radius: 0px 20px;
   min-height: 200px;	
@@ -861,6 +896,7 @@ display: flex;
 justify-content: space-evenly;
 align-items: center;
 }
+
 .choice img{
  transform: scale(1.3); 
 }
@@ -887,7 +923,6 @@ color: white;
 }
 
 
-
 .active, .accordion:hover {
 background-color: #ccc;
 }
@@ -900,12 +935,6 @@ color: white;
 float: right;
 margin-left: 5px;
 }
-
-
-.active:after {
-
-}
-
 
 
 .panel {
@@ -970,11 +999,6 @@ font-weight: 700;
 font-size: 20px;
 position: relative;
 }
-/* .nav-menu li a {
-position: relative;
-color: #000;
-text-decoration: none;
-} */
 
 
 .nav-menu li a::before {
@@ -1075,13 +1099,9 @@ transform: scaleX(1);
     .contact-form{
       border-radius: 0;
     }
-
-    
-   
   }
 
 .banner{
-  /* position: relative; */
   width: 100%;
   height: 100vh;
 }
@@ -1103,9 +1123,7 @@ transform: scaleX(1);
 }
 
 blockquote {
-  /* font-family: Georgia, serif; */
   font-size: 15px;
-  /* font-style: italic; */
   width: 500px;
   margin: 0.25em 0;
   padding: 0.35em 40px;
@@ -1251,92 +1269,4 @@ blockquote {
     margin: 30px;
   }
 }
-
-@media only screen and (max-width: 600px) {
-
-  /* #cards_landscape_wrap-2{
-    overflow-x: hidden;
-   
-  } */
-  *{
-    text-align: center;
-  }
-  
-  .heading{
-    font-size: 28px;
-    text-align: center;
-  }
-  .banner{
-    margin-bottom: -50vh;
-  }
-  .about .curve-img{
-    width: 100;
-    height: 100;
-    display: none;
-  }
-  .info{
-    margin-top: 2vh;
-  }
-  .info-card , .about ,.services-card , .service-header, .choice, .offer,  .faq-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-   
-  }
- 
- 
-  #counter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
-  #counter .c{
-    padding-bottom: 2vh;
-  }
-  .centered{
-    margin-top: 5vh;
-    font-size: 25px;
-  }
-  .contact .card{
-    margin:2vh;
-  }
- .services{
-   margin-top: -20vh;
- }
-  .services-card div{
-    width: 100%;
-  }
-  .second-grp{
-    display: none;
-  }
-  .choice img{
-    width: 300px;
-    height: 300px;
-  }
-  .offer img{
-    height: 300px;
-    width: 100%;
-  }
-  .offer .offer-text h1{
-    font-size: 28px;
-  }
-  .offer .offer-text{
-    font-size: 20px;
-    padding: 5vh;
-  }
- .faq img{
-  display: none;
- }
-  .top{
-    display: none;
-  }
-  .info .info-card .card-body{
-    margin-bottom: 5vh;
-  }
-}
-
 
