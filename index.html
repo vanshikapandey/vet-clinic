@@ -8,8 +8,8 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="assets/style.css">
     
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -18,14 +18,7 @@
 
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/a8ddd754b0.js" crossorigin="anonymous"></script>
-
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -46,292 +39,289 @@
        <span><i class ="fa fa-phone"></i>9919998777</span>
        <span><i class ="fa fa-envelope"></i>vetrp95@gmail.com</span>
     </div>
-  <header>
-    <a href="#" class="logo">Logo</a>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Our Services</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-      
-    </ul>
-  </header>
+
+   <header>
+     <div class="logo"><h1>Canine Clinic</h1></div>
+     <div class="navigation">
+        <input type="checkbox" id="nav-checkbox">
+        <label for="nav-checkbox" class="nav-toggle">
+          <i class="fa fa-bars" id ="open" ></i>
+          <i class="fa fa-close " id ="close" ></i>
+        </label>
+        
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+     </div>
+   </header>
+  
   <section class="banner">
     <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active carou" data-bs-interval="4000">
-            <img src="img/bg.jpg" class="d-block w-100"  height= "1000" alt="...">
-           
-            <div class="centered"  >  <div><i class="fas fa-dog"></i><i class="fas fa-cat"></i><i class="fas fa-dove"></i><i class="fas fa-horse"></i><i class="fas fa-cow"></i></div >Canine Pet & Veterinary Clinic   </div>
+            <img src="img/bg.jpg" class="d-block w-100"  >
+            <div class="centered">
+              <div><i class="fas fa-dog"></i><i class="fas fa-cat"></i><i class="fas fa-dove"></i><i class="fas fa-horse"></i><i class="fas fa-cow"></i></div >Canine Pet & Veterinary Clinic
+            </div>
           </div>
           <div class="carousel-item carou" data-bs-interval="4000">
-            <img src="img/cat.webp" class="d-block w-100" height= "1000" alt="...">
+            <img src="img/cat.webp" class="d-block w-100" alt="...">
             <div class="centered" >  Canine Pet & Veterinary Clinic</div>
           </div>
           <div class="carousel-item carou" data-bs-interval="4000">
-            <img src="img/deer.webp" class="d-block w-100"  height= "1000" alt="...">
+            <img src="img/deer.webp" class="d-block w-100"     alt="...">
           <div class="centered" >  Canine Pet & Veterinary Clinic</div>
           </div>
         </div>
-       
       </div>
    </section>
- 
-
-   <!-- <div class="container ">
-     <div class="row">
-       <div class="col">
-         <div class="header">
-      <div id="rc_logo">
-        <a href="#home" title="Logo"><img src ="logo.png" width="80" height="80"></a> 
-      </div>  
-      <div class = "timings">
-        <div class="d-flex" style="align-items:center;" >
-          <i class = "fa fa-clock-o" style="font-size: 34px; background-color: rgba(128, 128, 128, 0.389);padding: 5px;border-radius: 5px;margin: 1vh;"> </i><p>9:00am to 1:00pm <br> Gomti Nagar Lucknow</p>
-        </div>
-        <div class="d-flex" style="align-items:center;" >
-          <i class = "fa fa-clock-o"> </i><p>9:00am to 1:00pm <br> Gomti Nagar Lucknow</p>
-        </div>
-        <div class="d-flex" style="align-items:center;" >
-          <i class = "fa fa-clock-o"> </i><p>9:00am to 1:00pm <br> Gomti Nagar Lucknow</p>
-        </div>
-      </div>
-      </div>
-      </div>
-    </div>
-    </div> -->
-
- 
-      <div class="container" style="margin-top: 15vh;">
+  
+  <div class="container info">
         <div class="row">
           <div  class = "info-card">
-            <div data-aos="flip-up" data-aos-duration="1000" class="card" style="width: 18rem;">
+            <div data-aos="flip-up" data-aos-duration="1000" class="card col-sm-12 col-xs-12" style="width: 18rem;">
                 <div class="card-body">
                   <i class="fa fa-envelope"></i>
                   <h5 class="card-title">We Love</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsa odio commodi sit reiciendis magni perspiciatis, incidunt voluptates nostrum fugiat. </p>
-                  
                 </div>
               </div>
-              <div data-aos="flip-left" data-aos-duration="1000" class="card" style="width: 18rem;">
+              <div data-aos="flip-left" data-aos-duration="1000" class="card col-sm-12 col-xs-12" style="width: 18rem;">
                 <div class="card-body">
                   <i class="fa fa-map-marker"></i>
                   <h5 class="card-title">We Care</h5>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsa odio commodi sit reiciendis magni perspiciatis, incidunt voluptates nostrum fugiat. </p>
-                 
                 </div>
               </div>
-              <div data-aos="flip-down" data-aos-duration="1000" class="card" style="width: 18rem;">
+              <div data-aos="flip-down" data-aos-duration="1000" class="card col-sm-12 col-xs-12" style="width: 18rem;">
                 <div class="card-body">
                     <i class="fa fa-phone"></i>
                   <h5 class="card-title">We Protect</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsa odio commodi sit reiciendis magni perspiciatis, incidunt voluptates nostrum fugiat. </p>
-                  
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsa odio commodi sit reiciendis magni perspiciatis, incidunt voluptates nostrum fugiat. </p> 
                 </div>
               </div>
-              <div data-aos="flip-right" data-aos-duration="1000" class="card" style="width: 18rem;">
+              <div data-aos="flip-right" data-aos-duration="1000" class="card col-sm-12 col-xs-12" style="width: 18rem;">
                 <div class="card-body">
                     <i class="fa fa-envelope"></i>
                   <h5 class="card-title">Card title</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsa odio commodi sit reiciendis magni perspiciatis, incidunt voluptates nostrum fugiat. </p>
-                 
                 </div>
-              </div>
-        </div>
-        </div>
+          </div>
       </div>
+    </div>
+  </div>
 
-      
 
-   
-
-      <div class="container " style="margin-top: 10vh;">
+      <div class="container">
         <div class="row">
           <div class="about">
-          <div  data-aos="fade-right" data-aos-duration="2000" class ="col-md-5">
-            <img src="img/aboutImg.png"  height="500" width="500" style="transform: scale(1.2);">
-          </div>
-          <div data-aos="fade-down" data-aos-duration="2000" class="col-md-6">
-            <h1 class="heading"> <i class="fa fa-paw"></i> About Us <i class="fa fa-paw"></i></h1>
-              <p>This pet clinic offers all kinds of pet related services and facilities for dogs cats & birds .It is a complete care hospital for your loved ones. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis mollitia aliquid nostrum, cum tenetur sequi illo doloribus dolorum magnam culpa ullam exercitationem iusto. Mollitia ex harum eum assumenda iure sint!
-                Mobile clinical services in Lucknow and other nearby cities .</p>
-               <div style="margin-top: 10vh;">
-                 <div style="margin-bottom:4vh"><i class =" tick fa fa-check"></i>Lorem ipsum dolor sit amet <i class =" tick fa fa-check"></i>Lorem ipsum dolor sit amet </div>
-                 <div><i class =" tick fa fa-check"></i>Lorem ipsum dolor sit amet <i class =" tick fa fa-check"></i>Lorem ipsum dolor sit amet</div>
-               </div>
-               <div class="col-md-3 col-sm-12" style="float: right;">
-                <img src="img/gif.gif" alt="">
+            <div  data-aos="fade-right" data-aos-duration="2000" class ="col-md-5 col-sm-12 curve-img">
+              <img src="img/aboutImg.png" >
+            </div>
+            <div data-aos="fade-down" data-aos-duration="2000" class="col-md-6 col-sm-12">
+              <h1 class="heading"> <i class="fa fa-paw"></i> About Us <i class="fa fa-paw"></i></h1>
+                <p>This pet clinic offers all kinds of pet related services and facilities for dogs cats & birds .It is a complete care hospital for your loved ones. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis mollitia aliquid nostrum, cum tenetur sequi illo doloribus dolorum magnam culpa ullam exercitationem iusto. Mollitia ex harum eum assumenda iure sint!
+                  Mobile clinical services in Lucknow and other nearby cities .</p>
+                <div class="tick-div" style="margin-top: 10vh;">
+                  <div class="grid-container ">
+                    <div class="grid-item d-flex align-items-center">
+                        <i class = "fa fa-paw"></i>
+                        <div>
+                         <h3>Pet Care</h3>
+                         <h5>Lorem ipsum dolor sit  </h5>
+                        </div>
+                    </div>
+                    <div class="grid-item d-flex align-items-center">
+                        <i class = "fa fa-paw"></i>
+                        <div>
+                         <h3>Pet Care</h3>
+                         <h5>Lorem ipsum dolor sit  </h5>
+                        </div>
+                    </div>
+                    <div class="grid-item d-flex align-items-center">
+                        <i class = "fa fa-paw"></i>
+                        <div>
+                         <h3>Pet Care</h3>
+                         <h5>Lorem ipsum dolor sit  </h5>
+                        </div>
+                    </div>
+                    <div class="grid-item d-flex align-items-center">
+                        <i class = "fa fa-paw"></i>
+                        <div>
+                         <h3>Pet Care</h3>
+                         <h5>Lorem ipsum dolor sit  </h5>
+                        </div>
+                    </div>
+                </div>
               </div>
+            </div>
           </div>
         </div>
+      </div> 
+
+<section style="background-image: url(img/service-img.png);background-position: center;background-repeat: no-repeat;background-size: cover; margin-top: 15vh;">
+
+<div class="container" >
+  <div class="row">
+    <div style="margin-top:5vh;text-align: center;">
+      <i class="fa fa-paw" style="font-size: 35px;color: rgba(97, 82, 64, 0.578);text-align: center;"></i>
+      <div ><h1 class="heading" style="color: white;">Our Services</h1> </div>
+    </div>
+    <div id="cards_landscape_wrap-2" >
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="">
+                <div class="card-flyer">
+                    <div class="text-box">
+                        <div class="image-box">
+                          <img src="img/groom.jpg" alt="">   
+                        </div>
+                        <div class="text-container">
+                            <h6>Pet Grooming</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
+        <div  class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="">
+                <div class="card-flyer">
+                    <div class="text-box">
+                        <div class="image-box">
+                          <img src="img/dog-set.jpg" alt="">    
+                        </div>
+                        <div class="text-container">                                    
+                            <h6>Dog Setting</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
+        <div  class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="">
+                <div class="card-flyer">
+                    <div class="text-box">
+                        <div class="image-box">
+                          <img src="img/meals.jpg" alt="">
+                          
+                        </div>
 
-
-    <div id="cards_landscape_wrap-2" style="background-image: url(img/service-img.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
-     
-      <div style="width: 100%;" class="container">
-          <div class="row">
-            <i class="fa fa-paw" style="font-size: 35px;color: rgba(97, 82, 64, 0.578);"></i>
-            <div style="float: inline-end;"><strong class="heading" style="color: white;">Our Services</strong> </div>
-  
-              <div data-aos="fade-right" class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                  <a href="">
-                      <div class="card-flyer">
-                          <div class="text-box">
-                              <div class="image-box">
-                                <img src="img/groom.jpg" alt="">
-                                  <!-- <img src="img/https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="" /> -->
-                              </div>
-                              <div class="text-container">
-                                  <h6>Pet Grooming</h6>
-                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                  <a href="">Read More</a>
-                              </div>
-                          </div>
-                      </div>
-                  </a>
-              </div>
-              <div data-aos="fade-right" class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                  <a href="">
-                      <div class="card-flyer">
-                          <div class="text-box">
-                              <div class="image-box">
-                                <img src="img/dog-set.jpg" alt="">  
-                                  <!-- <img src="img/https://cdn.pixabay.com/photo/2018/04/09/19/55/low-poly-3305284_960_720.jpg" alt="" /> -->
-                              </div>
-                              <div class="text-container">                                    
-                                  <h6>Dog Setting</h6>
-                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                  <a href="">Read More</a>
-                              </div>
-                          </div>
-                      </div>
-                  </a>
-              </div>
-              <div data-aos="fade-left" class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                  <a href="">
-                      <div class="card-flyer">
-                          <div class="text-box">
-                              <div class="image-box">
-                                <img src="img/meals.jpg" alt="">
-                                  <!-- <img src="img/https://cdn.pixabay.com/photo/2018/04/06/13/46/poly-3295856_960_720.png" alt="" /> -->
-                              </div>
-
-                              <div class="text-container">
-                                  <h6>Healthy Meals</h6>
-                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                 <a href="">Read More</a>
-                              </div>
-                          </div>
-                      </div>
-                  </a>
-              </div>
-              <div data-aos="fade-left" class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                  <a href="">
-                      <div class="card-flyer">
-                          <div class="text-box">
-                              <div class="image-box">
-                                <img src="img/vet-serv.jpg" alt="">
-                                  <!-- <img src="img/https://cdn.pixabay.com/photo/2018/03/30/15/12/dog-3275593_960_720.jpg" alt="" /> -->
-                              </div>
-                              <div class="text-container">
-                                  <h6>Veterinary Services</h6>
-                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                 <a href="">Read More</a>
-                              </div>
-                          </div>
-                      </div>
-                  </a>
-              </div>
-          </div>
+                        <div class="text-container">
+                            <h6>Healthy Meals</h6>
+                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                           <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div  class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="">
+                <div class="card-flyer">
+                    <div class="text-box">
+                        <div class="image-box">
+                          <img src="img/vet-serv.jpg" alt="">
+                       
+                        </div>
+                        <div class="text-container">
+                            <h6>Veterinary Services</h6>
+                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                           <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>    
       </div>
+    </div>
+  </div> 
+   
+</section>
+
+<section style="background-color: rgb(244,242,239);">
+
+  <div  class="section-team container">		
+    <div class="row justify-content-center text-center">
+      <div class="col-md-12 col-lg-6">
+        <div class="header-section">
+          <i class="fa fa-group" style="font-size:28px"></i>
+          <div class="ring"></div>
+          <h1 data-aos="fade-up" data-aos-duration="1500"  class="heading">Our Experts</h1>
+          <h4 data-aos="fade-up" data-aos-duration="2000" >Let's meet with our team members</h4>
+        </div>
+      </div>
+      <div class="col-md-12 d-flex team-card" >
+      <div  class="col-xs-12 col-sm-3 col-lg-3 col-xl-3">
+        <div class="single-person">
+          <div class="person-image">
+            <img src="https://i.ibb.co/G2CBWvb/person1.jpg" alt="">
+            <span class="icon">
+              
+            </span>
+          </div>
+          <div class="person-info">
+            <h3 class="full-name">John Doe</h3>
+            <span class="speciality">Web Developer</span>
+          </div>
+        </div>
+      </div>
+      <div  class="col-xs-12 col-sm-3 col-lg-3 col-xl-3">
+        <div class="single-person">
+          <div class="person-image">
+            <img src="https://i.ibb.co/nbpNr4r/person2.jpg" alt="">
+            <span class="icon">
+              <i class="fab fa-wordpress-simple"></i>
+            </span>
+          </div>
+          <div class="person-info">
+            <h3 class="full-name">Robert Smith</h3>
+            <span class="speciality">WordPress Developer</span>
+          </div>
+        </div>
+      </div>
+      <div  class="col-sm-3 col-lg-3 col-xl-3">
+        <div class="single-person">
+          <div class="person-image">
+            <img src="https://i.ibb.co/25zdRMr/person3.jpg" alt="">
+            <span class="icon">
+              <i class="fab fa-angular"></i>
+            </span>
+          </div>
+          <div class="person-info">
+            <h3 class="full-name">John Doe</h3>
+            <span class="speciality">Angular Developer</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-lg-3 col-xl-3">
+        <div class="single-person">
+          <div class="person-image">
+            <img src="https://i.ibb.co/25zdRMr/person3.jpg" alt="">
+            <span class="icon">
+              <i class="fab fa-angular"></i>
+            </span>
+          </div>
+          <div class="person-info">
+            <h3 class="full-name">John Doe</h3>
+            <span class="speciality">Angular Developer</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-    
-    <section data-aos="fade-up" data-aos-duration="2000"  class="section-team"  style="background-color: rgb(244,242,239);" >
-		<div class="container">
-			<!-- Start Header Section -->
-			<div class="row justify-content-center text-center">
-				<div class="col-md-8 col-lg-6">
-					<div class="header-section">
-            <i class="fa fa-group" style="font-size:28px"></i>
-            <div class="ring"></div>
-						<h1 data-aos="fade-up" data-aos-duration="1500"  class="heading">Our Experts</h1>
-						<h4 data-aos="fade-up" data-aos-duration="2000" >Let's meet with our team members</h4>
+</div>
 
-					</div>
-				</div>
-			</div>
-			<!-- / End Header Section -->
-			<div class="row justify-content-center">
-				<!-- Start Single Person -->
-				<div data-aos="fade-down-right" data-aos-duration="2000" class="col-sm-3 col-lg-3 col-xl-3">
-					<div class="single-person">
-						<div class="person-image">
-							<img src="https://i.ibb.co/G2CBWvb/person1.jpg" alt="">
-							<span class="icon">
-								<!-- <i class="fab fa-html5"></i> -->
-							</span>
-						</div>
-						<div class="person-info">
-							<h3 class="full-name">John Doe</h3>
-							<span class="speciality">Web Developer</span>
-						</div>
-					</div>
-				</div>
-				<!-- / End Single Person -->
-				<!-- Start Single Person -->
-				<div data-aos="fade-down-left" data-aos-duration="2000" class="col-sm-3 col-lg-3 col-xl-3">
-					<div class="single-person">
-						<div class="person-image">
-							<img src="https://i.ibb.co/nbpNr4r/person2.jpg" alt="">
-							<span class="icon">
-								<i class="fab fa-wordpress-simple"></i>
-							</span>
-						</div>
-						<div class="person-info">
-							<h3 class="full-name">Robert Smith</h3>
-							<span class="speciality">WordPress Developer</span>
-						</div>
-					</div>
-				</div>
-        <div data-aos="fade-up-right" data-aos-duration="2000" class="col-sm-3 col-lg-3 col-xl-3">
-					<div class="single-person">
-						<div class="person-image">
-							<img src="https://i.ibb.co/nbpNr4r/person2.jpg" alt="">
-							<span class="icon">
-								<i class="fab fa-wordpress-simple"></i>
-							</span>
-						</div>
-						<div class="person-info">
-							<h3 class="full-name">Robert Smith</h3>
-							<span class="speciality">WordPress Developer</span>
-						</div>
-					</div>
-				</div>
-				<!-- / End Single Person -->
-				<!-- Start Single Person -->
-				<div data-aos="fade-up-left" data-aos-duration="2000" class="col-sm-3 col-lg-3 col-xl-3">
-					<div class="single-person">
-						<div class="person-image">
-							<img src="https://i.ibb.co/25zdRMr/person3.jpg" alt="">
-							<span class="icon">
-								<i class="fab fa-angular"></i>
-							</span>
-						</div>
-						<div class="person-info">
-							<h3 class="full-name">John Doe</h3>
-							<span class="speciality">Angular Developer</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
+</section>
 
   <div class="container stats" style=" background: linear-gradient(to right,  #00b5f7,#101c81);border-radius: 40px;" >
     <div class="row">
@@ -356,7 +346,7 @@
   </div>
   </div>
   
-<section class="testimony container-fluid"  >
+<section class="testimony container"  >
   <div >
     <div class="row">
       
@@ -399,13 +389,11 @@
       </div>
     </div>
   </div>
-</section>
-
+</section> 
 
 <section> 
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.493855312377!2d80.99354361496898!3d26.856046383152005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2c61f6c6acf%3A0xfb6d7e740121d20b!2sCanine%20Pet%20Veterinary%20Clinic%20%26%20Pet%20Shop!5e0!3m2!1sen!2sin!4v1650963362704!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
-
 
     <div class="footer-dark">
         <footer>
@@ -432,7 +420,7 @@
                         <h3>Canine Pet & Veterinary Clinic</h3>
                         <p>This pet clinic offers all kinds of pet related services and facilities for dogs cats & birds .It is a complete care hospital for your loved ones. Mobile clinical services in Lucknow and other nearby cities.</p>
                     </div>
-                    <div class="col item social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    <div class="col item social"><a href="#"><i  style = "font-size: 13px;" class="fa fa-facebook"></i></a><a href="#"><i style = "font-size: 13px;" class="fa fa-twitter"></i></a><a href="#"><i style = "font-size: 13px;" class="fa fa-instagram"></i></a></div>
                 </div>
                 <p class="copyright">Canine Pet and Veterinary Clinic © 2021</p>
             </div>
@@ -440,7 +428,6 @@
     </div>
    
     <script src="assets/app.js"></script>
-    
    
 </body>
 </html>
