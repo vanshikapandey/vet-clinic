@@ -19,7 +19,15 @@
         <!-- font-awesome -->
         <script src="https://kit.fontawesome.com/a8ddd754b0.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
     
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -41,7 +49,7 @@
    </div>
 
   <header>
-    <div class="logo"><h1>Canine Clinic</h1></div>
+    <div class="logo"><h1>Logo</h1></div>
     <div class="navigation">
        <input type="checkbox" id="nav-checkbox">
        <label for="nav-checkbox" class="nav-toggle">
@@ -62,18 +70,18 @@
    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
        <div class="carousel-inner">
          <div class="carousel-item active carou" data-bs-interval="4000">
-           <img src="img/bg.jpg" class="d-block w-100"   alt="...">
+           <img src="img/pups.png" class="d-block w-100"   alt="...">
           
-           <div class="centered"  >  <div><i class="fas fa-dog"></i><i class="fas fa-cat"></i><i class="fas fa-dove"></i><i class="fas fa-horse"></i><i class="fas fa-cow"></i></div >Canine Pet & Veterinary Clinic   </div>
+           <div class="centered"  > About Us   </div>
          </div>
-         <div class="carousel-item carou" data-bs-interval="4000">
-           <img src="img/cat.webp" class="d-block w-100" alt="...">
-           <div class="centered" >  Canine Pet & Veterinary Clinic</div>
-         </div>
-         <div class="carousel-item carou" data-bs-interval="4000">
+         <!-- <div class="carousel-item carou" data-bs-interval="4000">
+           <img src="img/cow1.png" class="d-block w-100" alt="...">
+           <div class="centered" >  About Us</div>
+         </div> -->
+         <!-- <div class="carousel-item carou" data-bs-interval="4000">
            <img src="img/deer.webp" class="d-block w-100"     alt="...">
          <div class="centered" >  Canine Pet & Veterinary Clinic</div>
-         </div>
+         </div> -->
        </div>
      </div>
   </section>
@@ -160,33 +168,34 @@
 </section>
 
 <section class="contact-form"  >
-    <div class="container " >
+    <div class="container contact-form" >
         <div class="row">
-            <h1 class="heading"> <i class="fa fa-paw"></i> Get In Touch <i class="fa fa-paw"></i></h1>
+            <h1 class="heading">Get In Touch</h1>
+            <form  name="contact" data-netlify="true" method="POST">
             <div class="contact-section">
-                <div class="col-md-5  col-sm-12">
+                <div class="col-md-5">
                     <div class="mb-3" >
-                        <label for="name" class="form-label">Name</label>
+                        <label for="name" name="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" placeholder="Your Name">
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
+                        <label for="email" name="emailAddress" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="email" placeholder="Your Email">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="text" name="text" class="form-label">Message</label>
+                        <textarea class="form-control" id="text" rows="3"></textarea>
                     </div>
                     <div class="submit-btn">
-                        <button>Submit</button>
+                        <button type="submit">Submit</button>
                     </div>
                 </div>
+              </form>
         
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4">
                 <img src="img/introimage.png" alt="" height="300">
             </div>
         </div>
-    </div>
     </div>
 </section>
 
