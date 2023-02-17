@@ -3,9 +3,13 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  list-style: none;
-  font-family: 'Lato', sans-serif;
-  
+  list-style: none;  
+}
+p{
+  font-family: 'Quicksand', sans-serif;
+}
+h1 h2 h3 h4 h5 h6{
+  font-family: 'Quicksand', sans-serif;
 }
 i{
   padding:0 2vh ;
@@ -13,7 +17,7 @@ i{
 }
 .top {
   margin-bottom: 0vh;
-  background-color: #000000;
+  background-color: rgb(38,38,38);
   line-height: 7vh;
   text-align: center;
   color: white;
@@ -21,6 +25,10 @@ i{
 }
 .top span{
   padding-left: 2vh;
+  
+}
+.top span i{
+  color: white;
 }
 
 .clinic-name{
@@ -37,7 +45,7 @@ i{
 
   padding:20px;
   margin:4vh ;
-  background-color: rgb(4, 4, 94);
+  background-color: #101c81;
   color: white;
   border-radius: 5px;
   text-transform: uppercase;
@@ -45,15 +53,37 @@ i{
   font-weight: 600;
   word-spacing: 3px;
   border: none;
+  text-decoration: none;
 
 }
   
-
+.social-media{
+  position: absolute;
+  z-index: 3;
+  right:10;
+}
+.social-media ul li a i{
+  margin-top: 15vh;
+  font-size: 20px;
+  color: white;
+  padding: 0 1px 0 1px;
+  
+}
 .about{
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  padding: 10vh;
+  /* border-radius: 25%; */
+  background-color:rgb(244,242,239);
 
+}
+.about p{
+  line-height: 4vh;
+  color: #555558;
+}
+.about .tick-div i{
+  font-size: 20px;
 }
 
 .about-page{
@@ -176,11 +206,11 @@ i{
 
 #cards_landscape_wrap-2 {
   text-align: center;
-  /* margin-top: 5vh; */
+  
   display: flex;
   justify-content: space-between;
   padding: 5vh 0;
-  /* background: #f7f7f7; */
+ 
 }
 #cards_landscape_wrap-2 h1{
   font-weight: 700;
@@ -225,6 +255,7 @@ i{
 }
 #cards_landscape_wrap-2 .card-flyer .text-box .text-container {
   padding: 30px 18px;
+  color: #555558;
 }
 #cards_landscape_wrap-2 .card-flyer {
   background: #ffffff;
@@ -252,7 +283,7 @@ i{
   padding-bottom: 0px;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #000000;
+  color: #555558;
 }
 #cards_landscape_wrap-2 .card-flyer .text-box h6 {
   margin-top: 0px;
@@ -386,9 +417,15 @@ i{
 .section-team .single-person .person-info .speciality {
   text-transform: uppercase;
   font-size: 14px;
-  color: #016cec;
+  color: #052c8f;
 }
-
+.section-team .single-person .person-info a i{
+background-color: #101c81;
+color: white;
+padding: 12px;
+border-radius: 5px;
+margin: 2vh 0.5vh;
+}
 .section-team .single-person:hover .full-name,
 .section-team .single-person:hover .speciality {
   color: #fff;
@@ -476,8 +513,8 @@ i{
   font-size: 45px;
   font-weight: 800;
   position: relative;
-  margin-bottom: 70px;
-  padding-bottom: 3vh;
+  margin-bottom: 50px;
+
   text-transform: uppercase;
   font-family: 'Fredoka', sans-serif;
   font-family: 'Montserrat', sans-serif;
@@ -485,19 +522,6 @@ i{
   
 }
 
-
-.heading::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #101c81;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
 
 .heading:hover::before {
   transform: scaleX(1);
@@ -519,7 +543,7 @@ i{
 .footer-dark {
   padding: 50px 0;
   color: #f0f9ff;
-  background: rgb(4, 4, 94);
+  background: #101c81;
 }
 
 .footer-dark h3 {
@@ -605,7 +629,7 @@ i{
   margin-top: 90vh;
 }
 .services {
-  margin-top: 30vh;
+  margin-top: -10vh;
 }
 .choose .points {
   display: flex;
@@ -633,6 +657,8 @@ i{
   justify-content: space-evenly;
   align-items: center;
   z-index: 1;  
+  color:#555558 ;
+  line-height: 3.5vh;
 }
 
 
@@ -641,9 +667,9 @@ i{
 }
 .card .card-body i {
 
-  font-size: 62px;
+  font-size: 48px;
+  padding: 3vh;
 }
-
 
 
 .contact-form{
@@ -672,7 +698,7 @@ i{
 .submit-btn button{
   padding:10px;
   margin-top:4vh ;
-  background-color: rgb(4, 4, 94);
+  background-color: #101c81;
   color: white;
   border-radius: 5px;
   text-transform: uppercase;
@@ -726,7 +752,6 @@ i{
   }
   
   .services{
-  margin-top: 50vh;
   padding: 5vh;
   }
   
@@ -771,7 +796,7 @@ i{
   }
   
   
-  .active, .accordion:hover {
+   .accordion:hover {
   background-color: #ccc;
   }
   
@@ -822,6 +847,10 @@ i{
   z-index: 5;
   margin-top: 7vh;
   
+  
+  }
+  #linear-bg{
+    background-image: linear-gradient(to right, rgba(17, 90, 146, 0),rgba(14, 59, 155, 0.088),#101c81);
   }
   header .logo{
   color: white;
@@ -829,7 +858,7 @@ i{
   header.sticky{
   background-color: #101c81;
   color: white;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   margin-top: 0;
   transition: background-color 0.5s ease;
   }
@@ -844,11 +873,14 @@ i{
   text-decoration: none;
   padding: 0 15px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   position: relative;
+  font-family: 'Quicksand', sans-serif;
+
   }
-  
-  
+  .active{
+    font-weight: 800;
+  }
   .nav-menu li a::before {
   margin-bottom: -2vh;
   content: "";
@@ -863,6 +895,7 @@ i{
   transition: transform 0.3s ease;
   }
   
+  
   .nav-menu li a:hover::before {
   transform: scaleX(1);
   }
@@ -871,9 +904,14 @@ i{
   width: 100%;
   height: 100vh;
 }
+.banner button a {
+  color: white;
+  text-decoration: none;
+}
 .carou{
   position: relative;
 }
+
 .centered{
   position: absolute;
   top: 50%;
@@ -883,23 +921,46 @@ i{
   font-size: 80px;
   
 }
+.text-center-land {
+  width: 33%;
+  position:absolute;
+  left: 15%;
+  top: 20%;
+  margin-left:-80px;
+  margin-top:5vh;
+  font-size: 82px;
+  word-wrap: break-word;
+  display:inline-block;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;}
 
-.testimony{
-  margin:10vh;
+.full-width{
+  width:100%;
+  overflow:hidden;
+  position:relative;
+
 }
+.full-width img {width:100%;}
 
+
+
+.testimony .carousel-item{
+  background-image: radial-gradient(rgb(48, 122, 220),rgb(17, 107, 190), rgb(22, 49, 138));
+}
 blockquote {
   font-size: 15px;
   width: 500px;
-  margin: 0.25em 0;
-  padding: 0.35em 40px;
-  line-height: 1.45;
   position: relative;
   color: white;
   line-height: 3vh;
   padding: 10vh;
   font-weight: 500;
+  margin-top: 25vh;
+/
+border-radius: 5vh;
+
   }
+
   
   blockquote:before {
   display: block;
@@ -923,21 +984,43 @@ blockquote {
   content: "\2014\2009";
   }
 
-.testimony{
-  margin-top: 20vh;
-}
+  @-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
+ }
+
 .testimony blockquote{
   margin:0 auto;
-}
-
-.testimony .carousel-item{
-  /* background-color: #101c81; */
-  /* opacity: 0.6; */
-  /* color:white */
-}
+} 
 
 .aboutUs{
-  margin-top: 35vh;
+  margin-top: 5vh;
 }
 .aboutUs button a{
   text-decoration: none;
@@ -1052,12 +1135,14 @@ blockquote {
     font-size: 28px;
     text-align: center;
   }
+
   .banner{
     margin-bottom: -60vh;
   }
   .info{
-    margin-bottom: 10vh;
+    margin-top: 10vh;
   }
+
   .about .curve-img{
     width: 100;
     height: 100;
@@ -1119,6 +1204,7 @@ blockquote {
   .top{
     display: none;
   }
+
   .info .info-card .card-body{
     margin-bottom: 5vh;
   }
@@ -1210,18 +1296,6 @@ blockquote {
     }
 }
 
-/* @media screen and (max-width: 500px) {
-  .slide-box {
-    padding: 0 55px;
-  }
-  .offer {
-    display: flex;
-  }
-  .offer img {
-    width: 350px;
-    margin-left: auto;
-  }
-} */
         
 @media (max-width: 767px) {
   .footer-dark .item:not(.social) {
@@ -1270,6 +1344,9 @@ blockquote {
 
 @media only screen and (min-width: 992px) {
   .info{
-    margin: 20vh;
+    margin: 25vh;
+  }
+  .team-card{
+    margin-top: -15vh;
   }
 }
